@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- account balance -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title">Account Blance</div>
+                <div id="account-blance" class="stat-value">89400</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="flex gap-2">
+              <button id="show-add-money-font" class="btn btn-lg">
+                Add Money
+              </button>
+              <button id="show-cass-out-font" class="btn btn-lg">
+                Cass Oute
+              </button>
+              <button id="show-Transation" class="btn btn-lg">
+                Transation
+              </button>
+            </div>
+
+            <div class="divider"></div>
+            <!-- add money form start -->
+            <div
+              id="add-money-form"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    id="input-add-money"
+                    type="text"
+                    placeholder="Add Money Amound"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">pin Number</span>
+                  </label>
+                  <input
+                    id="input-pin-pass"
+                    type="password"
+                    autocomplete="off"
+                    placeholder="pin Number"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-add-money" class="btn btn-primary">
+                    Abb Money
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- add money form ends -->
+            <!-- cass out form start-->
+            <div
+              id="add-cass-out-form"
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    id="input-cass-oute-money"
+                    type="text"
+                    placeholder="cass out Amound"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">pin Number</span>
+                  </label>
+                  <input
+                    id="input-cass-out-pin"
+                    type="password"
+                    autocomplete="off"
+                    placeholder="pin Number"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-coss-out-money" class="btn btn-primary">
+                    Cash Oute
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- cass out form ends-->
+            <!--transitio  start  -->
+            <div
+              id="transitio-section"
+              class="bg-white rounded-lg m-5 hidden text-center"
+            >
+              <h1 class="text-center text-5xl p-4">Transation History</h1>
+              <div id="transaction-contaner"></div>
+            </div>
+            <!--transitio  end  -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cassOut.js"></script>
+    <script src="./js/fetur.js"></script>
+  </body>
+</html>
